@@ -54,3 +54,8 @@ function includeHTML() {
       localStorage["thispage"] = JSON.stringify(pokemons);
     });
 }
+
+function deleteItems() {
+  window.localStorage.removeItem("thispage");
+  location.reload();
+}

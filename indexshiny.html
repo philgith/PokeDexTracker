@@ -26,10 +26,16 @@
 		<script async="" src="./PokeDex_files/f.txt"></script>
 		<main id="main" class="main-content grid-container">
 			<ul class="list-nav panel panel-nav">
-				<li><i class="gg-pokemon"></i></li>
+				<div class="dropdown">
+					<li><i class="gg-pokemon dropbtn"></i></li>
+					<div class="dropdown-content">
+						<b onclick="deleteItems()">Clear all</b>
+						</div>
+					  </div>
+					</div>
 				<li>PokéDex Tracker</li>
 				<li><a href="./index.html">Main</a></li>
-				<li><a href="./indexshiny.html">Shiny</a></li>
+				<li><a class="select" href="./indexshiny.html">Shiny</a></li>
 				<li><a href="https://philgith.github.io/pokedex/">Sprite Gallery</a></li>
 			</ul>
 			<hr>

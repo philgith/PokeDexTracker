@@ -54,3 +54,8 @@ function includeHTML() {
       localStorage["shinypage"] = JSON.stringify(pokemons);
     });
 }
+
+function deleteItems() {
+  window.localStorage.removeItem("shinypage");
+  location.reload();
+}

@@ -2175,3 +2175,42 @@ ins.adsbygoogle{
         color: #00c2b8;
         margin-top: 2px;
     }
+
+    .gg-pokemonshiny {
+        color: gold;
+        margin-top: 2px;
+    }
+
+    .dropbtn{
+        cursor: pointer;
+    }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #555353bd;
+        min-width: 80px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 0;
+      }
+      
+      .dropdown-content b {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content b:hover {background-color: #555353e5}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    
+      .dropdown:hover .dropbtn {
+        color: gray;
+      }
+
+.select {
+    color: #404040;
+}
