@@ -1,3 +1,5 @@
+let pokemons = [];
+
 /* HTML inclusion script. */
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
@@ -27,12 +29,28 @@ function includeHTML() {
     }
 
     if (localStorage["shinypage"] !== undefined && localStorage["shinypage"] !== null) {
-		document.querySelector("div").innerHTML = localStorage["shinypage"];
-	}
+      pokemons = JSON.parse(localStorage["shinypage"]);
+      $(function(){
+        JSON.parse(localStorage["shinypage"]).forEach(e => {
+          $('a.infocard').filter(function () {
+            return $(this).text().trim() == e;
+          }).addClass("highlight");
+        });
+      });
+    }
+    
+    $(document).on('click', "div > a", function(event) {
+      localStorage.removeItem("shinypage");
+      this.classList.toggle("highlight");
+      
+      if (!$(this).hasClass("highlight")) {
+        //Remove
+        pokemons.splice(pokemons.indexOf($(this).text().trim()), 1);
+      } else {
+        //Add
+        pokemons.push($(this).text().trim());
+      }
 
-    $(document).on('click', "div > a", function() {
-        localStorage.removeItem("shinypage");
-        this.classList.toggle("highlight");
-        localStorage["shinypage"] = document.querySelector("div").innerHTML;
+      localStorage["shinypage"] = JSON.stringify(pokemons);
     });
 }
