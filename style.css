@@ -386,7 +386,7 @@ hr{
 }
 .grid-container{
     margin:0 auto;
-    max-width:1220px
+    max-width:620px
 }
 .grid-row{
     display:flex;
@@ -2215,4 +2215,80 @@ ins.adsbygoogle{
 
 .select {
     color: #404040;
+}
+
+.icon-shinycharm{
+    margin-left: -15px;
+    margin-right: 15px;
+    margin-top: -1000px;
+    margin-bottom: -13px;
+    width:40px;
+    height:40px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.icon-shinycharm:hover{
+    margin-left: -13px;
+    width: 35px;
+    height:35px;
+    margin-bottom: -10px;
+    transition: 0.3s;
+}
+
+.icon-pokeball{
+    margin-left: -25px;
+    margin-right: -20px;
+    margin-top: -1000px;
+    margin-bottom: -15.4px;
+    width:84px;
+    height:41px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.icon-pokeball:hover{
+    margin-left: -23px;
+    width:82px;
+    height:40.9px;
+    margin-bottom: -14.5px;
+    transition: 0.3s;
+}
+
+.icon-shinycharmnew{
+    margin-left: -25px;
+    margin-right: -21px;
+    margin-top: -1000px;
+    margin-bottom: -14px;
+    width:82px;
+    height:40px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.icon-shinycharmnew:hover{
+    margin-left: -23.2px;
+    width:78px;
+    height:37px;
+    margin-bottom: -12.5px;
+    transition: 0.3s;
+}
+
+.icon-tracker{
+    margin-left: -25px;
+    margin-right: -20px;
+    margin-top: -1000px;
+    margin-bottom: -13.5px;
+    width:82px;
+    height:37.9px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.icon-tracker:hover{
+    margin-left: -23.1px;
+    width:80px;
+    height:36.9px;
+    margin-bottom: -13.5px;
+    transition: 0.3s;
 }
