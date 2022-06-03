@@ -35,7 +35,10 @@
 				<li><a class="" href="./index"><b>PokéDex Tracker</b></a></li>
 				<li style="padding-left: 4;padding-right: 5px;padding-left: 10px;"><img class="icon-tracker" alt="Pokedex Sprite Gallery Website" src="./assets/adventure-guide.png" onclick="location.href='https://philgith.github.io/pokedex/';"></li>
 				<li style="padding-left: 4;padding-right: 5px;padding-left: 10px;"><img class="icon-tracker" alt="Main Page" src="./assets/pokeballs/poke.png" onclick="location.href='./index';"></li>
-				<changezoom><li style="padding-left: 4;padding-right: 5px;padding-left: 10px;"><img class="icon-tracker" alt="Shiny Sprite Dex" src="./assets/wide-lens.png"></li></changezoom>
+				<div class="tooltip">
+					<changezoom><li style="padding-left: 4;padding-right: 5px;padding-left: 10px;"><img class="icon-tracker" alt="Shiny Sprite Dex" src="./assets/wide-lens.png"></li></changezoom>
+					<span class="tooltiptext">Change Zoom</span>	
+				</div>
 			</ul>
 			<hr>
 			<div w3-include-html="pokemonshiny.html"></div> <!-- Include pokemonshiny.html -->
@@ -43,7 +46,7 @@
 		<script>var localDbVersions = 33;</script>
 		<script>includeHTML();</script> <!-- Trigger the HTML inclusion script.-->
 		<script>
-			const zooms = ["100%", "110%", "120%", "130%", "140%", "150%"];
+			const zooms = ["50%", "100%", "110%", "120%", "130%", "140%", "150%"];
 			let zoomIndex = parseInt(localStorage.getItem("zoomIndex")) || 0;
 			
 			const updateZoom = function() {
