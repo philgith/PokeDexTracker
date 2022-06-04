@@ -881,6 +881,7 @@ select:focus{
 }
 .panel{
     --panel-text: #404040;
+    
     display:block;
     margin-bottom:1rem;
     padding:1rem;
@@ -1552,7 +1553,9 @@ td>.infocard-list{
     display:inline-block;
     padding:0 .75rem 2rem;
     line-height:1.25;
-    text-align:center
+    text-align:center;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .infocard-list-pkmn-lg>.infocard{
     width:138px
@@ -1775,6 +1778,7 @@ td>.infocard-list{
 
 .icon-tracker{
     margin-left: -25px;
+    cursor: pointer;
     margin-right: -20px;
     margin-top: -1000px;
     margin-bottom: -13.5px;
