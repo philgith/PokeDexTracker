@@ -46,8 +46,8 @@
 		<script>var localDbVersions = 33;</script>
 		<script>includeHTML();</script> <!-- Trigger the HTML inclusion script.-->
 		<script>
-			const zooms = ["150%", "100%", "110%", "120%", "130%", "140%", "50%"];
-			let zoomIndex = parseInt(localStorage.getItem("zoomIndex")) || 0;
+			const zooms = ["50%", "60%", "80%", "110%", "120%", "130%", "140%", "150%", "180%", "200%"];
+			let zoomIndex = parseInt(localStorage.getItem("zoomIndex")) || 7;
 			
 			const updateZoom = function() {
 				document.querySelector("body").style.zoom = zooms[zoomIndex];
