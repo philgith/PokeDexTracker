@@ -1028,6 +1028,8 @@ select:focus{
 }
 .img-fixed{
     display:inline-block;
+    -webkit-filter: drop-shadow(5px 5px 5px #222222);
+    filter: drop-shadow(5px 5px 5px #222222);
     max-width:none;
     vertical-align:middle
 }
