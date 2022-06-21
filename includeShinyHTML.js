@@ -68,3 +68,6 @@ function addAllShiny() {
     location.reload();
   });
   }
+
+  
+window.addEventListener("contextmenu", e => e.preventDefault());

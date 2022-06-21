@@ -67,3 +67,6 @@ function addAll() {
     location.reload();
   });
   }
+
+  
+window.addEventListener("contextmenu", e => e.preventDefault());
